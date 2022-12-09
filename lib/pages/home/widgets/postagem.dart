@@ -141,7 +141,7 @@ class Postagem extends StatelessWidget {
 
   double _retornarMargemParaDesktop(bool desk){
     if(desk){
-      return 35;
+      return 16;
     }else{
       return 0;
     }

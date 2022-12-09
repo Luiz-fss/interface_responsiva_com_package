@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interface_responsiva_package/pages/home/widgets/painel.dart';
 import 'package:interface_responsiva_package/pages/home/widgets/app-bar-responsiva.dart';
 import 'package:interface_responsiva_package/pages/home/widgets/listagem-stories.dart';
 import 'package:interface_responsiva_package/pages/home/widgets/postagem.dart';
@@ -20,10 +21,17 @@ class HomePage extends StatelessWidget {
         ),
         child: Align(
           alignment: Alignment.topCenter,
-          child: ListView(
+          child: Row(
             children: [
-              ListagemStories(),
-              Postagem()
+              Expanded(
+                child: ListView(
+                  children: [
+                    ListagemStories(),
+                    Postagem()
+                  ],
+                ),
+              ),
+              Painel()
             ],
           ),
         ),

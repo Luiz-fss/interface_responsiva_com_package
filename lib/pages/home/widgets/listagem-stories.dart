@@ -14,7 +14,7 @@ class ListagemStories extends StatelessWidget {
 
     return Container(
       height: 110,
-      margin: EdgeInsets.symmetric(vertical: _retornarMagemPelaPlataforma(mobile)),
+      margin: EdgeInsets.only(top: _retornarMagemPelaPlataforma(mobile)),
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),
